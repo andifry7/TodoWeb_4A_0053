@@ -26,6 +26,11 @@ btnTambah.addEventListener("click", function () {
   statusBaru.innerHTML = "Status: Belum Selesai";
   statusBaru.classList.add("progress");
 
+  infoTugas.appendChild(spanBaru);
+  infoTugas.appendChild(document.createElement("br"));
+  infoTugas.appendChild(tanggalBaru);
+  infoTugas.appendChild(statusBaru);
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
