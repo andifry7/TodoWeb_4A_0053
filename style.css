@@ -21,6 +21,15 @@ input {
   padding: 10px;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
+  color: #64748b;
+}
+
+.input::placeholder {
+  color: #64748b;
+}
+
+.input[type="date"] {
+  color: #64748b;
 }
 
 .form input:focus {
