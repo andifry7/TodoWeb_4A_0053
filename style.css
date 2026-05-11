@@ -72,3 +72,7 @@ li {
 .edit {
   background: #f59e0b;
 }
+
+.edit:hover {
+  background: #d97706;
+}
