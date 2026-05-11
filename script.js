@@ -38,6 +38,14 @@ btnTambah.addEventListener("click", function () {
   btnEdit.innerHTML = "Edit";
   btnEdit.classList.add("edit");
 
+  btnEdit.addEventListener("click", function () {
+    let tugasBaru = prompt("Edit tugas:", spanBaru.innerHTML);
+
+    if (tugasBaru !== null && tugasBaru !== "") {
+      spanBaru.innerHTML = tugasBaru;
+    }
+  });
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
