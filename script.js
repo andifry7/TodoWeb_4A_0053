@@ -50,6 +50,18 @@ btnTambah.addEventListener("click", function () {
   btnStatus.innerHTML = "Done";
   btnStatus.classList.add("status");
 
+  btnStatus.addEventListener("click", function () {
+    if (statusBaru.innerHTML === "Status: Progress") {
+      statusBaru.innerHTML = "Status: Done";
+      statusBaru.classList.remove("progress");
+      statusBaru.classList.add("done");
+    } else {
+      statusBaru.innerHTML = "Status: Progress";
+      statusBaru.classList.remove("done");
+      statusBaru.classList.add("progress");
+    }
+  });
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
