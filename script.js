@@ -80,11 +80,12 @@ btnTambah.addEventListener("click", function () {
   daftarTugas.appendChild(listBaru);
 
   const warnaBaru = document.querySelectorAll("li");
+
   warnaBaru.forEach((item, index) => {
     if (index % 2 === 0) {
-      item.style.color = "red";
+      item.style.backgroundColor = "#e5e7eb";
     } else {
-      item.style.color = "blue";
+      item.style.backgroundColor = "#d1d5db";
     }
   });
 
