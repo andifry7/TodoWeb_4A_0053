@@ -5,9 +5,10 @@ const daftarTugas = document.getElementById("daftarTugas");
 
 btnTambah.addEventListener("click", function () {
   let teksTugas = inputTugas.value;
+  let tanggalTugas = inputDate.value;
 
-  if (teksTugas === "") {
-    alert("Data harus dimasukkan!");
+  if (teksTugas === "" || tanggalTugas === "") {
+    alert("Data dan tanggal harus diisi!");
     return;
   }
 
