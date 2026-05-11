@@ -56,3 +56,10 @@ li {
 .hapus:hover {
   background: #dc2626;
 }
+
+.card {
+  width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
