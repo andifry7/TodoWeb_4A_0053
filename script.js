@@ -89,4 +89,5 @@ btnTambah.addEventListener("click", function () {
   });
 
   inputTugas.value = "";
+  inputDate.value = "";
 });
