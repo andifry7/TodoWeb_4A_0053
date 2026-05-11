@@ -66,6 +66,10 @@ btnTambah.addEventListener("click", function () {
   btnHapus.innerHTML = "Hapus";
   btnHapus.classList.add("hapus");
 
+  btnHapus.addEventListener("click", function () {
+    listBaru.remove();
+  });
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
