@@ -13,6 +13,9 @@ btnTambah.addEventListener("click", function () {
   }
 
   let listBaru = document.createElement("li");
+
+  let infoTugas = document.createElement("div");
+
   let spanBaru = document.createElement("span");
 
   spanBaru.innerHTML = teksTugas;
