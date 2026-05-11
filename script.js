@@ -83,7 +83,7 @@ btnTambah.addEventListener("click", function () {
 
   warnaBaru.forEach((item, index) => {
     if (index % 2 === 0) {
-      item.style.backgroundColor = "#e5e7eb";
+      item.style.backgroundColor = "#f3f4f6";
     } else {
       item.style.backgroundColor = "#d1d5db";
     }
