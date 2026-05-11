@@ -111,6 +111,14 @@ li span {
   text-decoration: line-through;
 }
 
+.undo {
+  background: #6b7280;
+}
+
+.undo:hover {
+  background: #4b5563;
+}
+
 #daftarTugas {
   padding: 0;
 }
