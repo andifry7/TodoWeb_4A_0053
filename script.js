@@ -41,9 +41,18 @@ btnTambah.addEventListener("click", function () {
   btnEdit.addEventListener("click", function () {
     let tugasBaru = prompt("Edit tugas:", spanBaru.innerHTML);
 
-    if (tugasBaru !== null && tugasBaru !== "") {
-      spanBaru.innerHTML = tugasBaru;
+    if (tugasBaru === null) {
+      return;
     }
+
+    tugasBaru = tugasBaru.trim();
+
+    if (tugasBaru.length === 0) {
+      alert("Judul tugas tidak boleh kosong!");
+      return;
+    }
+
+    spanBaru.innerHTML = tugasBaru;
   });
 
   let btnStatus = document.createElement("button");
