@@ -62,6 +62,10 @@ btnTambah.addEventListener("click", function () {
     }
   });
 
+  let btnHapus = document.createElement("button");
+  btnHapus.innerHTML = "Hapus";
+  btnHapus.classList.add("hapus");
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
