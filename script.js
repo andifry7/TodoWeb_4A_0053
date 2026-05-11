@@ -31,6 +31,9 @@ btnTambah.addEventListener("click", function () {
   infoTugas.appendChild(tanggalBaru);
   infoTugas.appendChild(statusBaru);
 
+  let aksi = document.createElement("div");
+  aksi.classList.add("aksi");
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
