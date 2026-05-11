@@ -17,8 +17,10 @@ btnTambah.addEventListener("click", function () {
   let infoTugas = document.createElement("div");
 
   let spanBaru = document.createElement("span");
-
   spanBaru.innerHTML = teksTugas;
+
+  let tanggalBaru = document.createElement("small");
+  tanggalBaru.innerHTML = `Tanggal: ${tanggalTugas}`;
 
   listBaru.appendChild(spanBaru);
 
