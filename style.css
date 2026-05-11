@@ -63,3 +63,8 @@ li {
   padding: 20px;
   border-radius: 10px;
 }
+
+.aksi {
+  display: flex;
+  gap: 6px;
+}
