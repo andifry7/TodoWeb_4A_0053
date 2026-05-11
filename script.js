@@ -34,6 +34,10 @@ btnTambah.addEventListener("click", function () {
   let aksi = document.createElement("div");
   aksi.classList.add("aksi");
 
+  let btnEdit = document.createElement("button");
+  btnEdit.innerHTML = "Edit";
+  btnEdit.classList.add("edit");
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
