@@ -55,10 +55,18 @@ btnTambah.addEventListener("click", function () {
       statusBaru.innerHTML = "Status: Done";
       statusBaru.classList.remove("progress");
       statusBaru.classList.add("done");
+
+      btnStatus.innerHTML = "Undo";
+      btnStatus.classList.remove("status");
+      btnStatus.classList.add("undo");
     } else {
       statusBaru.innerHTML = "Status: Progress";
       statusBaru.classList.remove("done");
       statusBaru.classList.add("progress");
+
+      btnStatus.innerHTML = "Done";
+      btnStatus.classList.remove("undo");
+      btnStatus.classList.add("status");
     }
   });
 
