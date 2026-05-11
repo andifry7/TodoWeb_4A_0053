@@ -76,3 +76,11 @@ li {
 .edit:hover {
   background: #d97706;
 }
+
+.status {
+  background: #10b981;
+}
+
+.status:hover {
+  background: #059669;
+}
