@@ -84,3 +84,14 @@ li {
 .status:hover {
   background: #059669;
 }
+
+.progress {
+  color: orange;
+  font-weight: bold;
+}
+
+.done {
+  color: green;
+  font-weight: bold;
+  text-decoration: line-through;
+}
