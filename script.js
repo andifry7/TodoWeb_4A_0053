@@ -70,7 +70,12 @@ btnTambah.addEventListener("click", function () {
     listBaru.remove();
   });
 
-  listBaru.appendChild(spanBaru);
+  aksi.appendChild(btnEdit);
+  aksi.appendChild(btnStatus);
+  aksi.appendChild(btnHapus);
+
+  listBaru.appendChild(infoTugas);
+  listBaru.appendChild(aksi);
 
   daftarTugas.appendChild(listBaru);
 
