@@ -60,6 +60,10 @@ li {
   box-sizing: border-box;
 }
 
+li span {
+  font-weight: bold;
+}
+
 .hapus {
   background: #ef4444;
 }
