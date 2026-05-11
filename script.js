@@ -12,8 +12,10 @@ btnTambah.addEventListener("click", function () {
     return;
   }
 
+  // Membuat elemen list
   let listBaru = document.createElement("li");
 
+  // Container isi tugas
   let infoTugas = document.createElement("div");
 
   let spanBaru = document.createElement("span");
@@ -31,9 +33,11 @@ btnTambah.addEventListener("click", function () {
   infoTugas.appendChild(tanggalBaru);
   infoTugas.appendChild(statusBaru);
 
+  // Container tombol
   let aksi = document.createElement("div");
   aksi.classList.add("aksi");
 
+  // Tombol edit
   let btnEdit = document.createElement("button");
   btnEdit.innerHTML = "Edit";
   btnEdit.classList.add("edit");
@@ -55,6 +59,7 @@ btnTambah.addEventListener("click", function () {
     spanBaru.innerHTML = tugasBaru;
   });
 
+  // Tombol status
   let btnStatus = document.createElement("button");
   btnStatus.innerHTML = "Done";
   btnStatus.classList.add("status");
@@ -79,6 +84,7 @@ btnTambah.addEventListener("click", function () {
     }
   });
 
+  // Tombol hapus
   let btnHapus = document.createElement("button");
   btnHapus.innerHTML = "Hapus";
   btnHapus.classList.add("hapus");
@@ -96,6 +102,7 @@ btnTambah.addEventListener("click", function () {
 
   daftarTugas.appendChild(listBaru);
 
+  // Warna background selang-seling
   const warnaBaru = document.querySelectorAll("li");
 
   warnaBaru.forEach((item, index) => {
@@ -106,6 +113,7 @@ btnTambah.addEventListener("click", function () {
     }
   });
 
+  // Reset input
   inputTugas.value = "";
   inputDate.value = "";
 });
