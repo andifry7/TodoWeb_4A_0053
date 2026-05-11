@@ -22,6 +22,10 @@ btnTambah.addEventListener("click", function () {
   let tanggalBaru = document.createElement("small");
   tanggalBaru.innerHTML = `Tanggal: ${tanggalTugas}`;
 
+  let statusBaru = document.createElement("p");
+  statusBaru.innerHTML = "Status: Belum Selesai";
+  statusBaru.classList.add("progress");
+
   listBaru.appendChild(spanBaru);
 
   daftarTugas.appendChild(listBaru);
